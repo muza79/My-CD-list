@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CD list</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Special+Elite" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.2.1.js"
+			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+			  crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+</head>
+<body>
+
+  <div class="modal">
+
+      <span class="close">&times;</span>
+
+      <div class="modal-content">
+        <div class="contents"></div>
+
+      </div>
+
+    </div>
+
+<section class="container">
+  <div class="note1 note"></div>
+  <div class="note2 note"></div>
+  <div class="note3 note"></div>
+  <div class="note4 note"></div>
+  <div class="note5 note"></div>
+  <div class="note6 note"></div>
+  <div class="note7 note"></div>
+  <div class="note8 note"></div>
+  <div class="note9 note"></div>
+  <div class="note10 note"></div>
+  <h1>My Discotheque</h1>
+
+
+  <section class="cd-box">
+    <div class="row">
+      <div class="cd" data-albumid="67ba80f7-bce7-85fe-3816-daba2947aeb8"><p>A Perfect Cirle - Mer De Noms</p></div>
+      <div class="cd" data-albumid="e2728ab1-4da7-a3f5-8e21-6676b8210646"><p>A Perfect Cirle - Thirteenth Step</p></div>
+      <div class="cd" data-albumid="e2131424-b8a9-48c7-8ddd-c9d69b259c4d"><p>Aerosmith - Pump</p></div>
+      <div class="cd" data-albumid="2aee1713-7d56-00af-bc4f-3f4f0d84eea3"><p>Aerosmith - Big Ones</p></div>
+      <div class="cd" data-albumid="ae9fcb59-2ff1-2476-bfd3-9794559f284c"><p>Alice In Chains - Sap</p></div>
+      <div class="cd" data-albumid="c7fc1619-b11c-2a0d-9554-03775275e324"><p>Alice In Chains - Jar of Flies</p></div>
+      <div class="cd" data-albumid="3617a599-0e03-ce32-2508-527ab9531508"><p>Alice In Chains - Dirt</p></div>
+      <div class="cd" data-albumid="b0a7b463-3b9f-e8a4-49d3-e093d2da18ac"><p>Alice In Chains</p></div>
+      <div class="cd" data-albumid="570d2583-9375-2bb7-641e-0d8b2670a1a3"><p>Alice In Chains - Nothing Safe</p></div>
+      <div class="cd" data-albumid="d62a5ece-ae73-1066-86ac-a3e065a9f9d2"><p>Alice In Chains - Black Gives Way to Blue</p></div>
+      <div class="cd" data-albumid="d8c02195-ebac-4158-9d16-9740f3d90e60"><p>Ania - Ania Movie</p></div>
+      <div class="cd" data-albumid="1ce38ac6-d233-464d-93ee-5dca1952fde2"><p>Archive - Take my Head</p></div>
+      <div class="cd" data-albumid="e64536ba-b3bf-e9cb-c08b-75a505382ca5"><p>Archive - You All Look the Same to Me</p></div>
+      <div class="cd" data-albumid="3290b7d0-a6cb-45f7-7e18-f44f989399d3"><p>Audioslave</p></div>
+      <div class="cd" data-albumid="d5df449f-919c-7a55-98c4-070282c6ae0c"><p>Audioslave - Out of Exile</p></div>
+      <div class="cd" data-albumid="7c820914-0ad4-b764-f103-9336a282f939"><p>Asaf Avidan - Different Pulses</p></div>
+      <div class="cd" data-albumid="09135ca7-724d-e309-7925-721ebd06fa58"><p>Ayo - Joyful</p></div>
+      <div class="cd" data-albumid="8b026ab3-c70e-baf4-ce94-0564fe647ff5"><p>Erykah Badu - Mama's Gun</p></div>
+      <div class="cd" data-albumid="null"><p>Balkan Sevdah - Ramizem</p></div>
+      <div class="cd" data-albumid="afadc374-922b-7821-b272-fd1048a9d5b2"><p>Björk - Debut</p></div>
+    <!-- </div> -->
+
+    <!-- <div class="row"> -->
+      <div class="cd" data-albumid="69abd17a-190e-1da6-fb97-4875070e46b2"><p>Björk - Post</p></div>
+      <div class="cd" data-albumid="f14ba3c1-72a3-eff5-fc24-ea0562a240d9"><p>The Black Keys - El Camino</p></div>
+      <div class="cd" data-albumid="336fb898-45dc-4da4-82a2-4451c6eef1f4"><p>Mary J. Blige - A Mary Christmas</p></div>
+      <div class="cd" data-albumid="ce514424-7a4a-f11c-e8d3-384195d265c9"><p>David Bowie - Reality</p></div>
+      <div class="cd" data-albumid="c1ab87ce-3374-1775-0bf2-59001f8e50c4"><p>Jeff Buckley - Grace</p></div>
+      <div class="cd" data-albumid="4827fb8b-a981-8d2d-60c6-083afb8ed969"><p>Jeff Buckley - Sketches for My Sweetheart the Drunk</p></div>
+      <div class="cd" data-albumid="b661c149-0f66-450d-85f2-1a5b5ee96c54"><p>Jeff Buckley - Mystery White Boy</p></div>
+      <div class="cd" data-albumid="a9fa1da1-620f-40cb-82bb-6d8808bdbe8d"><p>Budka Suflera - Za Ostatni Grosz</p></div>
+      <div class="cd" data-albumid="4e374304-24f7-99df-a031-2172a4a9c193"><p>Bush - Sixteen Stone"</p></div>
+      <div class="cd" data-albumid="00580e92-2bef-2133-144e-f219053e1854"><p>Bush - Razorblade Suitcase</p></div>
+      <div class="cd" data-albumid="eaefbe9f-f5c6-4313-6870-c3413a8d0983"><p>Busta Rhymes - The Coming</p></div>
+      <div class="cd" data-albumid="d85968af-f01a-1672-fa11-5610839b7595"><p>Busta Rhymes - When Disaster Strikes…</p></div>
+      <div class="cd" data-albumid="a0bfe1e2-c8c9-ccfc-4d45-c582b06fde34"><p>Busta Rhymes - Extinction Level Event: The Final World Front</p></div>
+      <div class="cd" data-albumid="3d38c3a7-87bf-a7a8-d494-133c9c41a47a"><p>Jerry Cantrell - Boggy Depot</p></div>
+      <div class="cd" data-albumid="bed20651-d9ab-96de-5e6f-ea0cc244a719"><p>Jerry Cantrell - Degradation Trip</p></div>
+      <div class="cd" data-albumid="9eaf6424-42a9-4a1b-bd5b-ef7a794813e4"><p>Nick Cave & the Bad Seeds - Murder Ballads</p></div>
+      <div class="cd" data-albumid="8c50c14c-f442-44ce-8c33-a5c8a8fadcbd"><p>Nick Cave & the Bad Seeds - The Boatman's Call</p></div>
+      <div class="cd" data-albumid="7a0ff8c3-1788-6ec3-3558-73629e258c96"><p>Nick Cave - No More Shall We Part</p></div>
+      <div class="cd" data-albumid="25d9005a-6034-1666-568b-9dd34464d597"><p>Chylińska - Winna</p></div>
+      <div class="cd" data-albumid="edf33277-6868-be0a-c967-bd26baa67d6e"><p>Leonard Cohen - Greatest Hits</p></div>
+
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="3c91df66-03fa-4e89-94d5-eddcf5cdc6e5"><p>Leonard Cohen - More Best of</p></div>
+      <div class="cd" data-albumid="4e16d7e5-3d6a-4f1f-d40f-f3d8db3028eb"><p>Leonard Cohen - Ten New Songs</p></div>
+      <div class="cd" data-albumid="a2dcf659-283d-40d7-b1b5-4a385e0afd75"><p>Coma - Pierwsze Wyjscie z Mroku</p></div>
+      <div class="cd" data-albumid="null"><p>Coma - Zaprzepaszczone siły wielkiej armii świętych znaków</p></div>
+      <div class="cd" data-albumid="18076baf-2e90-1b85-771a-8afb0ea08ae2"><p>Coma - Hipertrofia</p></div>
+      <div class="cd" data-albumid="null"><p>Coma</p></div>
+      <div class="cd" data-albumid="d789b583-bc7e-5285-07dc-db4811079c6b"><p>The Cranberries - No Need to Argue</p></div>
+      <div class="cd" data-albumid="null"><p>Curly Heads - Ruby Dress Skinny Dog</p></div>
+      <div class="cd" data-albumid="669698bb-005c-e285-2c6d-976b9046e1dc"><p>Czesław Śpiewa - Tesco Value</p></div>
+      <div class="cd" data-albumid="c8772612-59fb-a6bd-e844-848085fa3ea3"><p>Czesław Śpiewa - Songs for the Gatekeeper</p></div>
+      <div class="cd" data-albumid="b0b0cc1b-10f6-a0c9-c11e-772ebc3a04e3"><p>Czesław Śpiewa - Debiut</p></div>
+      <div class="cd" data-albumid="3f28aa18-53c3-0733-9617-fd3e7d86bdcd"><p>Czesław Śpiewa - Pop</p></div>
+      <div class="cd" data-albumid="null"><p>Czesław Śpiewa - Czesław Śpiewa Miłosza</p></div>
+      <div class="cd" data-albumid="7b7df7d4-414b-3705-74a1-b0d623069ea9"><p>Dave Matthews Band - Crash</p></div>
+      <div class="cd" data-albumid="c5f70b46-1d70-8cb6-9f1b-6a7b017a50f4"><p>Dave Matthews Band - Before These Crowded Streets</p></div>
+      <div class="cd" data-albumid="d8df19d4-bb7b-4dbb-8cce-dcb20a3aa7f0"><p>Dave Matthews & Tim Reynolds - Live At Luther College</p></div>
+      <div class="cd" data-albumid="eca720da-1134-07aa-aa09-87ac9b206458"><p>Days of the New</p></div>
+      <div class="cd" data-albumid="dbe1079e-39c2-b583-ab43-0cef7b192fdd"><p>The Dead Weather - Horehound</p></div>
+      <div class="cd" data-albumid="43d20b9e-3029-6065-e763-8ba827b5ac3f"><p>dEUS - Worst Case Scenario</p></div>
+      <div class="cd" data-albumid="null"><p>De Press - Dwie Tęsknoty</p></div>
+
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="04aeae49-3052-4c05-bd0d-f0a7a90499b1"><p>Dire Straits - Communiqué</p></div>
+      <div class="cd" data-albumid="a68ef81b-5b91-42b0-88ac-0a82d4bf7ae7"><p>Dire Straits - On Every Street</p></div>
+      <div class="cd" data-albumid="7631c570-e6c2-497a-83b6-74428b1a0f0d"><p>The Doors</p></div>
+      <div class="cd" data-albumid="8911f437-5a7d-18cb-456b-5d7f9acf9dc8"><p>The Doors - Strange Days</p></div>
+      <div class="cd" data-albumid="42f24a14-2d32-af21-a331-5c08722eae29"><p>The Doors - Waiting for the Sun</p></div>
+      <div class="cd" data-albumid="b293a44a-4e3e-4073-a46a-f58a3273c0c3"><p>The Doors - The Soft Parade</p></div>
+      <div class="cd" data-albumid="71ba2c08-0a2a-25d2-b429-2f23443ba3c9"><p>The Doors - Morrison Hotel</p></div>
+      <div class="cd" data-albumid="4a7a68a7-84b4-f3dc-9240-d4dfad66501d"><p>The Doors - L.A. Woman</p></div>
+      <div class="cd" data-albumid="838a06d7-2113-5bcd-5bc9-5d15ff20265e"><p>Dream Theater - Images and Words</p></div>
+      <div class="cd" data-albumid="f449091c-c40b-6da5-476e-90cd08235433"><p>Dream Theater - Awake</p></div>
+      <div class="cd" data-albumid="eec24ef5-78b6-5dac-edf1-f3b52128fdec"><p>Dream Theater - Falling Into Infinity</p></div>
+      <div class="cd" data-albumid="2b24880a-b929-96ab-79bb-6af8c5f979ae"><p>Dream Theater - Metropolis, Pt. 2: Scenes from a Memory</p></div>
+      <div class="cd" data-albumid="f6ac58e3-f300-37a4-faae-c6b100688151"><p>Dream Theater - Train of Thought</p></div>
+      <div class="cd" data-albumid="null"><p>Dżem - The Singles</p></div>
+      <div class="cd" data-albumid="null"><p>Essential Glastonbury - The Greatest Hits from the Greatest Festival</p></div>
+      <div class="cd" data-albumid="ca7fbeab-9f8b-fa2a-5f4b-ccda6b9bae8d"><p>Everlast - Whitey Ford Sings the Blues</p></div>
+      <div class="cd" data-albumid="2dd12521-6dd1-bab5-dd54-e73a8cc45b83"><p>Faith No More - Introduce Yourself</p></div>
+      <div class="cd" data-albumid="a196b179-421d-c8d0-3f52-583c3466840b"><p>Faith No More - The Real Thing</p></div>
+      <div class="cd" data-albumid="60476238-aca2-9135-65be-4efed3247d64"><p>Faith No More - Live at the Brixton Academy</p></div>
+      <div class="cd" data-albumid="9fae4505-455d-48ea-84ba-04afaf557bd0"><p>Faith No More - Angel Dust</p></div>
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="d2cdde6b-eaa7-8419-c639-1841d1729f6e"><p>Faith No More - King for a Day… Fool for a Lifetime</p></div>
+      <div class="cd" data-albumid="585ff4e8-0981-4e2b-cc66-17be4865a47f"><p>Faith No More - Album of the Year</p></div>
+      <div class="cd" data-albumid="811306da-c919-11c9-d84a-4286df01abee"><p>Faith No More - Very Best Definitive Ultimate Greatest Hits Collection</p></div>
+      <div class="cd" data-albumid="8774efdf-2c28-3b18-d793-dd9512e3646e"><p>Faithless - Sunday 8pm</p></div>
+      <div class="cd" data-albumid="1cc6fc29-0dbf-dbe9-33bd-f5eb9af9c084"><p>Family Values Tour '98</p></div>
+      <div class="cd" data-albumid="null"><p>Flapjack - Fairplay</p></div>
+      <div class="cd" data-albumid="null"><p>Flapjack - Juicy Planet Earth</p></div>
+      <div class="cd" data-albumid="624edbb3-05af-6624-0327-80a37bd9edf3"><p>John Frusciante - To Record Only Water for Ten Days</p></div>
+      <div class="cd" data-albumid="9c6b829e-ad05-abca-2fb2-3bde4740ebf8"><p>John Frusciante - DC EP</p></div>
+      <div class="cd" data-albumid="9eeacb33-121e-4aeb-80d6-f234f49c2f3a"><p>Fugees - The Score</p></div>
+      <div class="cd" data-albumid="49a8c9b2-5b69-9b02-1e69-ebe4e7352f55"><p>Fun Lovin' Criminals - Come Find Yourself</p></div>
+      <div class="cd" data-albumid="bf0b4957-1f64-1448-6785-3ac1cbc8b467"><p>Fun Lovin' Criminals - 100% Colombian</p></div>
+      <div class="cd" data-albumid="b046ab56-dc81-065d-de1c-a19237b45b55"><p>Fun Lovin' Criminals - Mimosa</p></div>
+      <div class="cd" data-albumid="66073d88-8944-5f1a-f9cc-b8cee0cd188b"><p>Fun Lovin' Criminals - Loco</p></div>
+      <div class="cd" data-albumid="191bab3b-29cc-2b8e-72dc-28d05348f977"><p>Fun Lovin' Criminals - Welcome to Poppy’s</p></div>
+      <div class="cd" data-albumid="47079acd-c4f3-29fc-0eb0-182c0dd04be1"><p>Garbage</p></div>
+      <div class="cd" data-albumid="null"><p>Gawliński - Kwiaty Jak Relikwie</p></div>
+      <div class="cd" data-albumid="378d718a-89a9-d12d-3661-391905467ab3"><p>Marvin Gaye - Icon</p></div>
+      <div class="cd" data-albumid="64bb5373-ffce-f6cc-3a97-b97a33c78b59"><p>Godsmack</p></div>
+      <div class="cd" data-albumid="5abfc870-cba5-4919-9fb0-449bffa0f252"><p>Golec uOrkiestra - 1</p></div>
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="381101e4-1f32-405f-bada-829c063ddd04"><p>Golec uOrkiestra - 2</p></div>
+      <div class="cd" data-albumid="395d1417-03b8-415d-915d-74b5711ab7de"><p>Gomez - Bring It On</p></div>
+      <div class="cd" data-albumid="b264dd0f-244e-1fbf-03cd-f1b61a34ec9c"><p>Gomez - Liquid Skin</p></div>
+      <div class="cd" data-albumid="b08d39b9-2c46-6363-57b8-4df95df34f92"><p>Guns N' Roses - Greatest Hits</p></div>
+      <div class="cd" data-albumid="10fa3a8a-83cb-4adc-5e82-bf719e90d358"><p>Ben Harper - Welcome to the Cruel World</p></div>
+      <div class="cd" data-albumid="d3518a37-f64c-c1f8-584d-ddc0586e0ae6"><p>Ben Harper - Fight for Your Mind</p></div>
+      <div class="cd" data-albumid="f384811c-f50a-4af8-bdd7-e488fee54359"><p>Ben Harper - The Will to Live</p></div>
+      <div class="cd" data-albumid="00446ff3-1396-8992-66c4-ac6f74f18cb5"><p>Ben Harper & The Innocent Criminals - Burn to Shine</p></div>
+      <div class="cd" data-albumid="203de50d-c777-09f9-36d1-937530e9a633"><p>Ben Harper & The Innocent Criminals - Live From Mars</p></div>
+      <div class="cd" data-albumid="a3659720-0cfa-14f1-18f9-f99afdc83fed"><p>Ben Harper - Diamonds on the Inside</p></div>
+      <div class="cd" data-albumid="3b7b463e-a6de-fc1e-f55d-3d46d52a9d4e"><p>Ben Harper and the Blind Boys of Alabama - There Will Be a Light</p></div>
+      <div class="cd" data-albumid="502b7b12-9cca-a1f6-1641-f97ca730c452"><p>Ben Harper - Both Sides of the Gun</p></div>
+      <div class="cd" data-albumid="b4542fae-1ded-af90-6530-dfc9a05c794a"><p>Ben Harper & The Innocent Criminals - Lifeline</p></div>
+      <div class="cd" data-albumid="14e3579c-0cb5-50e2-9f0a-e5aac05d70d1"><p>Ben Harper and Relentless 7 - Live From the Montreal International Jazz Festival</p></div>
+      <div class="cd" data-albumid="e115ae68-5055-9540-b8ff-dc0d567bc5c5"><p>Ben Harper and Relentless 7 - White Lies for Dark Times</p></div>
+      <div class="cd" data-albumid="7af9b4ca-695b-bc56-95b4-9b0c55be77c8"><p>Ben Harper - Give Till It's Gone</p></div>
+      <div class="cd" data-albumid="fe6b6df3-c942-1668-c44e-7c1836d719f5"><p>Ben Harper - By My Side</p></div>
+      <div class="cd" data-albumid="5c68db2c-12d2-284d-5456-47303dee405f"><p>Ben Harper with Charlie Musselwhite - Get Up!</p></div>
+      <div class="cd" data-albumid="null"><p>Jimi Hendrix - The Magic Collection</p></div>
+      <div class="cd" data-albumid="null"><p>Jimi Hendrix - Experience Hendrix</p></div>
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="null"><p>Hey - ?</p></div>
+      <div class="cd" data-albumid="null"><p>Hey - Uwaga! Ratunku! Pomocy!</p></div>
+      <div class="cd" data-albumid="null"><p>Homosapiens - The Wheel</p></div>
+      <div class="cd" data-albumid="null"><p>Illusion - 2</p></div>
+      <div class="cd" data-albumid="null"><p>Illusion - 3</p></div>
+      <div class="cd" data-albumid="9350438d-9f66-4b94-a01b-b25e5c76dbd0"><p>INXS - The Very Best</p></div>
+      <div class="cd" data-albumid="be4dd62d-c72c-bbeb-69b2-2072c6e1a566"><p>Janet Jackson - Velvet Rope</p></div>
+      <div class="cd" data-albumid="18b44cbd-fa95-e03a-27c6-1fdc02395e63"><p>Michael Jackson - Thriller</p></div>
+      <div class="cd" data-albumid="691000f2-bf12-45ef-f5a9-b26d04d09949"><p>Michael Jackson - HIStory: Past, Present and Future Book I</p></div>
+      <div class="cd" data-albumid="5d6b41f3-9a72-af0a-051f-aa660bf647c5"><p>Michael Jackson - Blood on the Dance Floor: HIStory in the Mix</p></div>
+      <div class="cd" data-albumid="4b18f08a-2ce2-c933-d89b-4f5fe720cc8c"><p>Jamiroquai - High Times: Singles 1992-2006</p></div>
+      <div class="cd" data-albumid="ab9d8282-edbc-071d-fca9-d3508ff4ab3e"><p>Lech Janerka - Co lepsze kawałki</p></div>
+      <div class="cd" data-albumid="6370e511-0802-c37e-badb-9f58fefc1f29"><p>Lech Janerka - Fiu, fiu...</p></div>
+      <div class="cd" data-albumid="156eacd9-31dd-3b72-30ce-a235ae05b6e5"><p>Jethro Tull - Aqualung</p></div>
+      <div class="cd" data-albumid="75197813-b348-736f-a603-3cbd208c659b"><p>The John Butler Trio - Three</p></div>
+      <div class="cd" data-albumid="80ea1874-cb9c-7bcf-a2b1-a531a9a3a6dd"><p>John Butler Trio - Sunrise Over Sea</p></div>
+      <div class="cd" data-albumid="2ad75a64-8585-6a61-85ed-d83b420d3c1d"><p>John Butler Trio - Grand National</p></div>
+      <div class="cd" data-albumid="90355cca-dd37-8a05-1b6a-a5df2c83c1d2"><p>Norah Jones - Come Away With Me</p></div>
+      <div class="cd" data-albumid="00b3bb69-cd49-1c98-ca41-420755333df0"><p>Norah Jones - Feels Like Home</p></div>
+      <div class="cd" data-albumid="25e1f995-209f-5c84-5c57-81822c6e3c27"><p>Anna Maria Jopek & Friends with Pat Metheny - Upojenie</p></div>
+    <!-- </div>
+
+    <div class="row"> -->
+      <div class="cd" data-albumid="a4ad96da-bdca-34eb-2764-3c0d052e071a"><p>Janis Joplin - Greatest Hits</p></div>
+      <div class="cd" data-albumid="null"><p>June - That's What I Like</p></div>
+      <div class="cd" data-albumid="null"><p>Juvenate</p></div>
+      <div class="cd" data-albumid="3dcccd53-0987-4be1-ac5c-3e2a381f9a93"><p>Kazik - Oddalenie</p></div>
+      <div class="cd" data-albumid="526d1812-2b38-4716-90f2-32f552c2fe6e"><p>Kazik - Melassa</p></div>
+      <div class="cd" data-albumid="34a476a8-a3e9-478e-a7ab-c00b9f8dfd47"><p>Kazik na Żywo - Na Żywo, ale w Studio</p></div>
+      <div class="cd" data-albumid="238c242e-9022-4840-b1ce-91f9b3fddb88"><p>Kazik na Żywo - Porozumienie Ponad Podziałami</p></div>
+      <div class="cd" data-albumid="520b84a5-bef9-4004-a2b0-ef4f2a48fb89"><p>KNŻ - Las Maquinas de la Muerte</p></div>
+      <div class="cd" data-albumid="8501f6ee-084f-4029-b20b-21085a6dae3a"><p>Kaenżet - Występ</p></div>
+      <div class="cd" data-albumid="null"><p>Klezzmates</p></div>
+      <div class="cd" data-albumid="78d74c61-ff99-eda2-b731-0c4bc9732b91"><p>Korn - Life Is Peachy</p></div>
+      <div class="cd" data-albumid="c2da9662-9875-642b-1977-b26a9ec75f35"><p>Korn - Issues</p></div>
+      <div class="cd" data-albumid="aeae712b-f1a2-0eb2-740a-12c2ea4cb8d5"><p>Kasia Kowalska - Gemini</p></div>
+      <div class="cd" data-albumid="dcde9a1e-ba26-206d-59b5-4697daeaa3b3"><p>Lenny Kravitz - Let Love Rule</p></div>
+      <div class="cd" data-albumid="4005e01c-73b8-9106-e9b2-93575fc9e9ea"><p>Lenny Kravitz - Mama Said</p></div>
+      <div class="cd" data-albumid="5efd2623-5de8-a4e4-8edb-fbccb9c24180"><p>Lenny Kravitz - Are You Gonna Go My Way</p></div>
+      <div class="cd" data-albumid="null"><p>Lenny Kravitz - Eternal Spirit</p></div>
+      <div class="cd" data-albumid="e17b83d9-fcc3-4576-0817-8e828d041bf9"><p>Lenny Kravitz - Circus</p></div>
+      <div class="cd" data-albumid="b4878ba9-d06c-3902-beb1-faec97b861b1"><p>Lenny Kravitz - 5</p></div>
+      <div class="cd" data-albumid="ae0b78f5-d02a-b5b5-7d2f-116cd8d6a464"><p>Lenny Kravitz - Baptism</p></div>
+      <div class="cd" data-albumid="null"><p>Krzysztof Krawczyk - Bo Marzę i Śnię</p></div>
+      <div class="cd" data-albumid="5843b287-7b0e-0cbb-2517-43679d5652ff"><p>Kula Shaker - K</p></div>
+      <div class="cd" data-albumid="15da4eda-8bb9-64ab-6fa9-931e2f347135"><p>Kult - Tata Kazika</p></div>
+      <div class="cd" data-albumid="8ff044e3-9ed3-49a6-a8de-1ae9dad4f0d1"><p>Kult - Tata 2</p></div>
+      <div class="cd" data-albumid="null"><p>Kult Kazika</p></div>
+      <div class="cd" data-albumid="8eae00b1-662d-94d7-2d0a-182269ed0eb0"><p>Kult - Ostateczny Krach Systemu Korporacji</p></div>
+      <div class="cd" data-albumid="98d753ae-c240-bbf6-deb3-3264e6907783"><p>Kult - Salon Recreativo</p></div>
+      <div class="cd" data-albumid="105d564e-6d96-46b8-ac18-fff6e39933f5"><p>Kult - Prosto</p></div>
+      <div class="cd" data-albumid="b9f1a5a1-4f0a-d9f4-a4ac-a00bca110457"><p>Kyuss - Wretch</p></div>
+      <div class="cd" data-albumid="b47efd73-a68d-1979-5ede-43661d16c284"><p>Kyuss - Blues for the Red Sun</p></div>
+      <div class="cd" data-albumid="a0bb8475-ddc4-4845-a0f3-99ff11c9ed99"><p>Kyuss - …And the Circus Leaves Town</p></div>
+      <div class="cd" data-albumid="null"><p>V.A. - Ladies</p></div>
+      <div class="cd" data-albumid="null"><p>Lao Che - Gusła</p></div>
+      <div class="cd" data-albumid="82db18fe-d611-feb7-edab-405cb0f3f73d"><p>Lao Che - Gospel</p></div>
+      <div class="cd" data-albumid="f848d722-dd8a-4b16-2eb9-e99267fc24de"><p>Lao Che - Prad Stały/Prad Zmienny</p></div>
+      <div class="cd" data-albumid="null"><p>Lao Che - Soundtrack</p></div>
+      <div class="cd" data-albumid="null"><p>Lao Che - Dzieciom</p></div>
+      <div class="cd" data-albumid="f12ba578-6299-92a7-e06d-003a4aed892b"><p>Led Zeppelin</p></div>
+      <div class="cd" data-albumid="32ce3b04-c236-ad5b-6059-12c7fc7461d8"><p>Led Zeppelin - II</p></div>
+      <div class="cd" data-albumid="c1b12778-6b63-735f-5dc2-dea6d380f285"><p>Led Zeppelin - III</p></div>
+      <div class="cd" data-albumid="86182f8d-ae08-4403-8413-a6977f969931"><p>Led Zeppelin - IV</p></div>
+      <div class="cd" data-albumid="e357333c-710c-45a0-bb85-617e54b90d26"><p>Led Zeppelin - Houses of the Holy</p></div>
+      <div class="cd" data-albumid="f32c31b4-836b-6588-4ed8-57bb2e902d4a"><p>Led Zeppelin - Physical Graffiti</p></div>
+      <div class="cd" data-albumid="978c097a-03bb-d73a-90bf-5405e3510477"><p>Led Zeppelin - Presence</p></div>
+      <div class="cd" data-albumid="ef6abbea-9ead-211f-9838-b5b634b74c10"><p>Led Zeppelin - In Through the Out Door</p></div>
+      <div class="cd" data-albumid="111f4faf-a9d1-2526-0f48-aab64e8f589d"><p>Led Zeppelin - Coda</p></div>
+      <div class="cd" data-albumid="9613220d-d794-36f5-2ec8-51226ef84da4"><p>Led Zeppelin - Remasters</p></div>
+      <div class="cd" data-albumid="null"><p>The John Lennon Collection</p></div>
+      <div class="cd" data-albumid="null"><p>Lenny Valentino - Uwaga Jedzie Tramwaj</p></div>
+      <div class="cd" data-albumid="e8a83bcf-9d31-46ae-a3fc-dda3e62b330e"><p>Limp Bizkit - Significant Other</p></div>
+      <div class="cd" data-albumid="cb56cd2f-4ae0-f12b-3d03-aae6127626af"><p>Limp Bizkit - Chocolate Starfish and the Hot Dog Flavored Water</p></div>
+      <div class="cd" data-albumid="null"><p>Lipali - Bloo</p></div>
+      <div class="cd" data-albumid="0e157ffe-11b1-6a35-9026-a78aed5775bd"><p>Lipali - Trio</p></div>
+      <div class="cd" data-albumid="b5311dc1-a893-2f58-8e73-969b367b7dfc"><p>Live - Throwing Copper</p></div>
+      <div class="cd" data-albumid="c029682b-cbb2-4a47-9ebe-b671efde36ae"><p>Live - V</p></div>
+      <div class="cd" data-albumid="null"><p>Łąki Łan - Łąki Łanda</p></div>
+      <div class="cd" data-albumid="null"><p>V.A. - Polska Młodzież Śpiewa Zagraniczne Piosenki</p></div>
+      <div class="cd" data-albumid="98c4fe66-2af6-a16b-4eec-9eec91febd0c"><p>Mad Season - Above</p></div>
+      <div class="cd" data-albumid="null"><p>Maleńczuk - Ande La More</p></div>
+      <div class="cd" data-albumid="e2c71e78-0230-1228-90c3-581cb88ee3cc"><p>Marilyn Manson - Antichrist Superstar</p></div>
+      <div class="cd" data-albumid="95dca280-ae81-36cd-c1e8-89d0f57492e8"><p>Marilyn Manson - Mechanical Animals</p></div>
+      <div class="cd" data-albumid="188b71a9-fc5b-63dd-3e35-9a3fbafdc6b6"><p>Marilyn Manson - Holy Wood (In the Shadow of the Valley of Death)</p></div>
+      <div class="cd" data-albumid="3e9baa29-d4be-83f3-9623-fd9f8a7fe11f"><p>Marilyn Manson - The Golden Age of Grotesque</p></div>
+      <div class="cd" data-albumid=""></div>
+      <div class="cd" data-albumid=""></div>
+    </div>
+
+  </section>
+
+</section><!--main__container-->
+
+
+</body>
+</html>

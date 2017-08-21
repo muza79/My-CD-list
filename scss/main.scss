@@ -1,0 +1,175 @@
+@import "partials/modal";
+
+//generals---------------------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+@keyframes note1 {
+  from { top: 0}
+  to   { top: 500%}
+}
+
+@keyframes neon { 50% {text-shadow: 0 0 .1em, 0 0 .2em,-4px -2px 5px #ff80aa}}
+
+@keyframes tremble {
+       25% {transform: rotate(.5deg);}
+       50% {transform: rotate(-.5deg);}
+       75% {transform: rotate(.5deg);}
+       100% {transform: rotate(-.5deg);}
+   }
+@keyframes blur {
+  from {filter: blur(.05em)}
+  to {filter: blur(0)}
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Special Elite', cursive;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(to top, #f2f2f2 0%, #1a1a1a 100%);
+  // background-image: radial-gradient(at center, #91a0ba 20%, #7284a7 30%, #586b8d 40%, #45536e 60%, #333e52 80%, #272f3f 100%);
+
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background: url('../images/note1.png') repeat;
+  // background-size: 200px 200px;
+  // animation: 10s infinite note1 linear;
+
+  .note1, .note2, .note3, .note4, .note5, .note6, .note7, .note8, .note9, .note10 {
+    width: 5rem;
+    height: 5rem;
+    background: url('../images/note1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    cursor: pointer;
+    @media(max-width: 700px) {
+      display: none;
+    }
+  }
+  .note1 {
+    left: 3%;
+    animation: 13s infinite note1 linear;
+  }
+  .note2 {
+    left: 10%;
+    animation: 5s infinite note1 linear;
+  }
+  .note3 {
+    left: 17%;
+    animation: 8s infinite note1 linear;
+  }
+  .note4 {
+    left: 24%;
+    animation: 10s infinite note1 linear;
+  }
+  .note5 {
+    left: 31%;
+    animation: 14s infinite note1 linear;
+  }
+  .note6 {
+    left: 65%;
+    animation: 7s infinite note1 linear;
+  }
+  .note7 {
+    left: 72%;
+    animation: 13s infinite note1 linear;
+  }
+  .note8 {
+    left: 79%;
+    animation: 11s infinite note1 linear;
+  }
+  .note9 {
+    left: 86%;
+    animation: 16s infinite note1 linear;
+  }
+  .note10 {
+    left: 93%;
+    animation: 9s infinite note1 linear;
+  }
+
+  h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 2rem;
+    margin: 2rem 0;
+    letter-spacing: .3rem;
+    text-shadow: -1px -1px 5px #ff80aa;
+    color: #ffc;
+    cursor: default;
+    animation: 3s neon infinite;
+    @media(max-width: 500px) {
+      font-size: 1.5rem;
+    }
+
+  }
+
+.cd-box {
+  height: 100%;
+  width: 30%;
+  border: 10px double #FFF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0 0 20px #000;
+  @media(max-width: 1200px) {
+    width: 50%;
+  }
+  @media(max-width: 700px) {
+    width: 70%;
+  }
+  @media(max-width: 500px) {
+    width: 90%;
+  }
+
+  .row {
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000;
+
+
+    .cd {
+      height: 2rem;
+      width: 0;
+      border: 1px solid #adad85;
+      box-shadow: -2px -2px #8a8a5c;
+      color: #FFF;
+      font-size: 1rem;
+      // writing-mode: vertical-rl;
+      cursor: pointer;
+      overflow: hidden;
+      &:hover{
+
+         animation: tremble .1s linear 2, blur 2.5s linear;
+       }
+
+      p {
+        // text-align: center;
+        padding: 10px 0 0 10px;
+        // &:hover {
+        //   filter: blur(.05em);
+        // }
+        }
+
+
+    }
+  }
+
+}
+
+}
